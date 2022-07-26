@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        <bean name="add" class="com.example.demo.ciambiguity.Addition" init-method="init" destroy-method="destroy">
+        <constructor-arg type="int" index="1">
+        <value>12</value>
+        </constructor-arg>
+        
+        <constructor-arg type="int" index="0">
+        <value>18</value>
+        </constructor-arg>
+        
+        </bean>
+
+     </beans>
